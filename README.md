@@ -2,9 +2,10 @@
 
 Userscript para usar instagram.com en Safari de iOS sin scroll infinito:
 
-- **Feed**: muestra los primeros `MAX_POSTS` (10) y luego un muro.
-- **Reels**: la pestaña Reels redirige al inicio. Un reel que te mandan por DM (`/reel/ID`) sí abre, pero sin "más publicaciones".
-- **Libre**: DMs, stories, búsqueda, explorar, perfiles.
+- **Sin feed**: el inicio redirige a los DMs. Sin feed tampoco hay anuncios.
+- **Sin Reels**: la pestaña Reels redirige a los DMs. Un reel que te mandan por DM (`/reel/ID`) sí abre, pero sin "más publicaciones".
+- **Explorar**: solo la barra de búsqueda; el grid de publicaciones se oculta.
+- **Libre**: DMs, búsqueda, perfiles (el tuyo y los que busques).
 
 Solo funciona en Safari, no en la app de Instagram. Borra la app (o límitala con Tiempo en Pantalla).
 
@@ -19,4 +20,4 @@ Solo funciona en Safari, no en la app de Instagram. Borra la app (o límitala co
 
 ## Ajustar
 
-Cambia `MAX_POSTS` al inicio del script. Si Instagram cambia su HTML y algo deja de bloquearse, los selectores son `main article` y `a[href="/reels/"]`.
+Si Instagram cambia su HTML y algo deja de bloquearse, los selectores están en el bloque `css` al inicio del script.
